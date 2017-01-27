@@ -9,5 +9,6 @@ Contents:
 
    web
    mobile
+   askbot
 
 * :ref:`search`

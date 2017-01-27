@@ -10,6 +10,7 @@ El proyecto Caja de Herramientas para Cacao Android esta elaborado usando el len
 
 ## Instalación
 
+* Clonar repositorio oficial
 * Java 1.7
 * Android Studio 1.1+
 * Retrofit 2.0
@@ -18,6 +19,27 @@ El proyecto Caja de Herramientas para Cacao Android esta elaborado usando el len
 * Butterknife 7.9 
 * EventBus 3.0 
 * PocketKnife 7.0 
+
+### Clonando repositorio y configurando proyecto:
+
+```
+git clone git@github.com:CacaoMovil/guia-de-cacao-android.git 
+```
+
+Si se desea conectar con otra instancia para el API se debe de modificar el archivo:
+
+com.kronoscode.com.android/app/src/main/java/kronos/comkronoscodecomandroid/activity/constants/Constants.java
+
+```
+public static final String DEFAULT_API_URL = "http://cacaomovil.com/api/v1/";
+```
+
+Para modificar el nombre del directorio donde las guías se guardan modificar el archivo com.kronoscode.com.android/app/build.gradle
+Línea a modificar:
+
+```
+buildConfigField 'String', 'CACAO_GUIDES', "\"CACAO GUIAS\""
+```
 
 ### Instalando Java
 
