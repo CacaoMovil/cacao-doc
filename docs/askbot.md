@@ -3,7 +3,15 @@ Cacao Respuestas
 
 Cacao Respuestas es una instancia de [Askbot](http://askbot.org/) con ciertas modificaciones disponibles en [este repositorio](https://github.com/CacaoMovil/askbot-devel)
 
-Cambios de CSS
+## Como agregar un backend SMS.
+
+Para crear un nuevo backend SMS se debe de agregar una nueva clase que herede de BaseSMSBackend en askbot/utils/sms.py y en esta clase implementar el método *send_sms*.
+
+Posteriormente se tendrá que modificar la funcion *get_sms_backend_client* en el mismo archivo para agregar la llamada hacia el backend pertinente.
+
+Finalmente para que el backend nuevo esté disponible en la configuración se debera de modificar el archivo conf/sms.py para incluirlo en la constante *SMS_BACKEND_CHOICES*. 
+
+## Cambios de CSS
 
 ```
     .button {
