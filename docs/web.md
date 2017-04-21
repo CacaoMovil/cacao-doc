@@ -1,5 +1,5 @@
 Cacao Movil Django
-===============
+==================
 
 Caja de Herramientas para Cacao
 > Aprendiendo e innovando sobre el cacao en sistemas agroforestales
@@ -8,7 +8,7 @@ La Caja de Herramientas para Cacao: Aprendiendo e Innovando sobre el Manejo Sost
 
 ## Información
 
-El proyecto Caja de Herramientas para Cacao esta elaborado usando el lenguaje de programación [Python](https://www.python.org/) y su framework web [Django](https://www.djangoproject.com/) usando [Postgress](http://www.postgresql.org/) como motor de base de datos, [Redis](http://redis.io/) para el almacenamiento de datos en caché y para la generación de PDF se utilizo [WKHTMLTOPDF](http://http://wkhtmltopdf.org/)
+El proyecto Caja de Herramientas para Cacao esta elaborado usando el lenguaje de programación [Python](https://www.python.org/) y su framework web [Django](https://www.djangoproject.com/) usando [PostgreSQL](http://www.postgresql.org/) como motor de base de datos, [Redis](http://redis.io/) para el almacenamiento de datos en caché y para la generación de PDF se utilizo [WKHTMLTOPDF](http://http://wkhtmltopdf.org/)
 
 ## Instalación
 
@@ -201,7 +201,8 @@ En el caso de no requerir estilos personalizados para cada guía solo se debe el
 Si quieres contribuir a este proyecto, por favor, lea el archivo de contribuyentes y realice los siguientes pasos
 
     # Fork this repository
-    # Clone your fork
+    git clone git@github.com:CacaoMovil/guia-de-cacao-django.git
+    pip install -r requirements.txt
     make run
 
     git checkout -b feature_branch
